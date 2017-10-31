@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello World!</h1>
+
+    <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="username" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="phone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Message</label>
+        </div>
+      </div>
+      <a id="button" class="waves-effect waves-light btn">button</a>
+    </form>
+  </div>
+  </div>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Message</th>
+        </tr>
+      </thead>
+      <tbody id="results">
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal Structure -->
+ <div id="modal1" class="modal">
+   <div class="modal-content">
+     <form class="col s12">
+       <div class="row">
+         <div class="input-field col s12">
+           <input placeholder="Placeholder" id="username" type="text" class="validate">
+           <label for="first_name">First Name</label>
+         </div>
+       </div>
+       <div class="row">
+         <div class="input-field col s12">
+           <input id="email" type="email" class="validate">
+           <label for="email">Email</label>
+         </div>
+       </div>
+       <div class="row">
+         <div class="input-field col s12">
+           <input id="phone" type="tel" class="validate">
+           <label for="icon_telephone">Telephone</label>
+         </div>
+       </div>
+       <div class="row">
+         <div class="input-field col s12">
+           <textarea id="message" class="materialize-textarea"></textarea>
+           <label for="icon_prefix2">Message</label>
+         </div>
+       </div>
+     </form>
+   </div>
+   <div class="modal-footer">
+      <a id="button" class="waves-effect waves-light btn">button</a>
+   </div>
+ </div>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
