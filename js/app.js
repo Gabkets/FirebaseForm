@@ -100,7 +100,6 @@ $('#results').on('click', '[data-remove]', function(){
 $('#results').on('click', '[data-edit]', function(){
   var dataId = $(this).data("id");
   console.log(dataId);
-  debugger;
   getElements('modal', 'form/' + dataId);
 });
 
